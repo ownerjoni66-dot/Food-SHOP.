@@ -1,0 +1,118 @@
+
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FOOD SHOP - Login</title>
+
+<style>
+* {
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  margin: 0;
+  background: #f1f7f2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.login-box {
+  background: white;
+  width: 100%;
+  max-width: 380px;
+  padding: 30px 22px;
+  border-radius: 16px;
+  box-shadow: 0 5px 25px #0001;
+}
+
+h1 {
+  text-align: center;
+  color: #078044;
+}
+
+p {
+  text-align: center;
+  color: #777;
+}
+
+label {
+  display: block;
+  margin-top: 18px;
+  font-weight: bold;
+}
+
+input {
+  width: 100%;
+  padding: 13px;
+  margin-top: 8px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 15px;
+}
+
+button {
+  width: 100%;
+  padding: 14px;
+  margin-top: 22px;
+  background: #078044;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 17px;
+  font-weight: bold;
+}
+
+.register {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.register a {
+  color: #078044;
+  text-decoration: none;
+  font-weight: bold;
+}
+</style>
+</head>
+
+<body>
+
+<div class="login-box">
+  <h1>🛍️ FOOD SHOP</h1>
+  <p>Welcome Back!</p>
+
+  <form id="loginForm">
+    <label>মোবাইল নম্বর</label>
+    <input type="tel" placeholder="01XXXXXXXXX"
+    required>
+
+    <label>পাসওয়ার্ড</label>
+    <input type="password"
+    placeholder="আপনার পাসওয়ার্ড"
+    required>
+
+    <button type="submit">LOGIN</button>
+  </form>
+
+  <div class="register">
+    নতুন অ্যাকাউন্ট?
+    <a href="register.html">Register করুন</a>
+  </div>
+</div>
+
+<script>
+document.getElementById("loginForm")
+.addEventListener("submit", function(e) {
+  e.preventDefault();
+  alert("Login server এখনো যুক্ত করা হয়নি।");
+});
+</script>
+
+</body>
+</html>
